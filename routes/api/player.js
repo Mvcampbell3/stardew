@@ -1,10 +1,11 @@
 const router = require('express').Router();
-const api_routes = require('./api');
-
-router.use('/api', api_routes);
 
 router.get('/', (req, res) => {
-  res.send('home')
+  res.json({ player: true })
+})
+
+router.post('/new', (req, res) => {
+  res.json({ create: true })
 })
 
 module.exports = router;
