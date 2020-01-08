@@ -3,8 +3,8 @@ const api_routes = require('./api');
 
 router.use('/api', api_routes);
 
-router.get('/', (req, res) => {
-  res.send('home')
-})
+router.use(function(req, res) {
+  res.sendFile(path.join(__dirname, '../client/dist/client/index.html'));
+});
 
 module.exports = router;

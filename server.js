@@ -7,6 +7,8 @@ const routes = require('./routes');
 app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
 
+app.use(express.static(path.join(__dirname, "client/dist/client")))
+
 
 app.use(routes)
 
