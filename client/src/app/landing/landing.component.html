@@ -1,8 +1,26 @@
 <div class="container">
   <div class="main-box">
     <h1>Stardew Match Maker</h1>
-    <div class="link-holder">
+    <!-- <div class="link-holder">
       <a routerLink='/quiz'>Quiz</a>
+    </div> -->
+  </div>
+  <div class="npc-holder">
+    <div class="npc" *ngFor='let npc of npcGroup'>
+
+      <div class="info-box">
+        <h3 class='npc-name text-center'>{{npc.name}}</h3>
+        <img class='npc-img' src={{npc.img_src}} alt="" class="npc-img">
+      </div>
+
+      <div class="list-box">
+        <h4 class='text-center'>Loved Items</h4>
+        <div class='npc-favs'>
+          <div class='fav-thing text-center' *ngFor='let thing of npc.favorite_things'>{{thing}}</div>
+        </div>
+      </div>
+      
+
     </div>
   </div>
 </div>

@@ -1,0 +1,33 @@
+.npc-holder{
+  margin: 1em auto;
+  display: grid;
+  width: fit-content;
+  grid-template-columns: repeat(3, 400px);
+  gap: 20px;
+
+  .npc{
+    background-color: teal;
+    padding: 5px;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 128px 1fr;
+
+    .npc-favs{
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      justify-items: center;
+      align-items: center;
+      gap: 5px;
+
+      .fav-thing{
+        width: fit-content;
+        background-color: white;
+        padding: 5px;
+        border-radius: 5px;
+      }
+    }
+  }
+
+
+}
+
