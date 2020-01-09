@@ -1,33 +1,54 @@
-.npc-holder{
-  margin: 1em auto;
-  display: grid;
-  width: fit-content;
-  grid-template-columns: repeat(3, 400px);
-  gap: 20px;
 
-  .npc{
-    background-color: rgb(32, 109, 109);
-    padding: 5px;
-    width: 100%;
-    display: grid;
-    grid-template-columns: 128px 1fr;
+.container{
+  min-height: 100vh;
+}
 
-    .npc-favs{
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      justify-items: center;
-      align-items: center;
-      gap: 5px;
+.main-box{
+  width: 600px;
+  position: relative;
+  border: 1px black solid;
+  padding: 20px;
+  background-color: rgb(78, 47, 5);
+  top: -25vh;
+  left: calc(50vw - 300px);
 
-      .fav-thing{
-        width: fit-content;
-        background-color: white;
-        padding: 5px;
-        border-radius: 5px;
-      }
-    }
+  animation-name: dropDown;
+  animation-duration: 2s;
+  animation-fill-mode: forwards;
+  animation-timing-function: linear;
+
+  h1{
+    color: white;
   }
 
 
+  @media screen and (max-width: 900px) {
+    width: 400px;
+    left: calc(50vw - 200px);
+  }
+
+  @media screen and (max-width: 600px) {
+    width: 350px;
+    left: calc(50vw - 175px);
+  }
 }
 
+.links{
+  display: grid;
+  margin-top: 20px;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+
+.link{
+  padding: 5px;
+  text-align: center;
+  background-color: green;
+  display: grid;
+  place-items: center center;
+}
+
+@keyframes dropDown{
+  0% { top: -25vh}
+  100% {top: 25vh}
+} 

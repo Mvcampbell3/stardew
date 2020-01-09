@@ -6,13 +6,17 @@ import { HttpClientModule } from '@angular/common/http';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { LandingComponent } from './landing/landing.component';
-import { QuizComponent } from './quiz/quiz.component';
+import { VillagersComponent } from './villagers/villagers.component';
+import { CropsComponent } from './crops/crops.component';
+import { MatchComponent } from './match/match.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     LandingComponent,
-    QuizComponent
+    VillagersComponent,
+    CropsComponent,
+    MatchComponent
   ],
   imports: [
     BrowserModule,
