@@ -3,6 +3,7 @@ export class Player {
   constructor(
     public name:string,
     public gamertag: string,
-    public platform: string
+    public platform: string,
+    public anwers?: number[]
   ) {}
 }

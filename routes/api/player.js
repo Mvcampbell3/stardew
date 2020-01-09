@@ -1,7 +1,8 @@
 const router = require('express').Router();
+const npcs = require('../../seed');
 
 router.get('/', (req, res) => {
-  res.json({ player: true })
+  res.json({ npcs })
 })
 
 router.post('/new', (req, res) => {
