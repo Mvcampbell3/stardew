@@ -9,6 +9,7 @@ import { LandingComponent } from './landing/landing.component';
 import { VillagersComponent } from './villagers/villagers.component';
 import { CropsComponent } from './crops/crops.component';
 import { MatchComponent } from './match/match.component';
+import { HeaderComponent } from './header/header.component';
 
 @NgModule({
   declarations: [
@@ -16,7 +17,8 @@ import { MatchComponent } from './match/match.component';
     LandingComponent,
     VillagersComponent,
     CropsComponent,
-    MatchComponent
+    MatchComponent,
+    HeaderComponent
   ],
   imports: [
     BrowserModule,

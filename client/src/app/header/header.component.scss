@@ -1,0 +1,43 @@
+header{
+  background-color: deepskyblue;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  h1{
+    font-family: 'Eczar', serif;
+
+    a{
+      text-decoration: none;
+      color: white;
+      padding: 0pc 30px;
+      &:hover{
+        background-color: #333;
+        color: deepskyblue;
+      }
+    }
+  }
+
+  nav ul{
+    display: flex;
+
+    li a{
+      padding: 10px;
+      text-decoration: none;
+      color: white;
+      font-family: 'Eczar', serif;
+      margin-left: 5px;
+      height: 56.8px;
+      display: grid;
+      place-items: center center;
+
+      &:hover{
+        background-color: #333;
+        color: deepskyblue;
+      }
+    }
+  }
+
+  
+}
