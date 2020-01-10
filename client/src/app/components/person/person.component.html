@@ -1,0 +1,13 @@
+<div class="villager">
+  <div class="potrait">
+    <h4 class="name info">{{npc.name}}</h4>
+    <img src={{npc.img_src}} alt={{npc.name}}>
+  </div>
+  <div class="info-box">
+    <h5 class="marry info">Marriable? {{npc.marriable ? 'Yes':'No'}}</h5>
+    <h5 class="fav info">Favorite Gifts</h5>
+    <div class="gift-holder">
+      <li class="gift" *ngFor='let gift of npc.favorite_things'>{{gift}}</li>
+    </div>
+  </div>
+</div>

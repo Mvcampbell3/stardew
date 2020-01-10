@@ -10,6 +10,7 @@ import { VillagersComponent } from './villagers/villagers.component';
 import { CropsComponent } from './crops/crops.component';
 import { MatchComponent } from './match/match.component';
 import { HeaderComponent } from './header/header.component';
+import { PersonComponent } from './components/person/person.component';
 
 @NgModule({
   declarations: [
@@ -18,7 +19,8 @@ import { HeaderComponent } from './header/header.component';
     VillagersComponent,
     CropsComponent,
     MatchComponent,
-    HeaderComponent
+    HeaderComponent,
+    PersonComponent
   ],
   imports: [
     BrowserModule,

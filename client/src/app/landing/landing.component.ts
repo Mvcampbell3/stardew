@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { HttpService } from '../services/http.service';
 
-import { NPC } from '../npc';
+import { NPC } from '../models/NPC';
 
 @Component({
   selector: 'app-landing',

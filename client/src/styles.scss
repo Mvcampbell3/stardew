@@ -16,3 +16,9 @@ ul{
 .text-center{
   text-align: center;
 }
+
+.mobile-hide{
+  @media screen and (max-width: 900px) {
+    display: none;
+  }
+}

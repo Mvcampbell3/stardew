@@ -1,1 +1,7 @@
 <app-header></app-header>
+
+<div class="container">
+  <div class="npc-holder">
+    <app-person *ngFor='let villager of villagers' [npc]=villager></app-person>
+  </div>
+</div>

@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import villagers from '../models/npcSeed';
+import { NPC } from '../models/NPC';
 
 @Component({
   selector: 'app-villagers',
@@ -6,6 +8,8 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./villagers.component.scss']
 })
 export class VillagersComponent implements OnInit {
+
+  villagers: NPC[] = villagers;
 
   constructor() { }
 
