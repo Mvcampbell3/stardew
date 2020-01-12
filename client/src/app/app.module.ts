@@ -11,6 +11,7 @@ import { CropsComponent } from './crops/crops.component';
 import { MatchComponent } from './match/match.component';
 import { HeaderComponent } from './header/header.component';
 import { PersonComponent } from './components/person/person.component';
+import { ProfileComponent } from './profile/profile.component';
 
 @NgModule({
   declarations: [
@@ -20,7 +21,8 @@ import { PersonComponent } from './components/person/person.component';
     CropsComponent,
     MatchComponent,
     HeaderComponent,
-    PersonComponent
+    PersonComponent,
+    ProfileComponent
   ],
   imports: [
     BrowserModule,

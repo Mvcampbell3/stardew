@@ -1,0 +1,16 @@
+<button (click)='closeProfileSend()'>Close</button>
+<div class="profile">
+  <div class="left-side">
+    <h2 class="name info">{{profile.name}}</h2>
+    <img src={{profile.img_src}} alt="">
+    <h4>Marriable? {{profile.marriable ? 'Yes':'No'}}</h4>
+  </div>
+  <div class="right-side">
+    <div class="gift-box">
+      <h3 class="title">Favorite Gifts</h3>
+      <div class="gift-holder">
+        <div class="gift" *ngFor='let gift of profile.favorite_things'>{{gift}}</div>
+      </div>
+    </div>
+  </div>
+</div>

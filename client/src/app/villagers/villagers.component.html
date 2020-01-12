@@ -1,7 +1,19 @@
 <app-header></app-header>
 
 <div class="container">
-  <div class="npc-holder">
-    <app-person *ngFor='let villager of villagers' [npc]=villager></app-person>
-  </div>
+
+  <div *ngIf="showProfile; then thenBlock else elseBlock"></div>
+
+  <ng-template #thenBlock>
+    <app-profile (closeProfile)='closeProfileRun()' [profile]=selectedVillager></app-profile>
+  </ng-template>
+
+  <ng-template #elseBlock>
+    <div class="npc-holder">
+      <app-person *ngFor='let villager of villagers' [npc]=villager (selected)='pickVillager($event)'></app-person>
+    </div>
+  </ng-template>
+
+
+
 </div>

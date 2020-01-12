@@ -1,6 +1,6 @@
-<div class="villager" [attr.data-which]=npc.name>
-  <div class="potrait">
-    <h4 class="name info text-center">{{npc.name}}</h4>
-    <img src={{npc.img_src}} alt={{npc.name}}>
+<div class="villager" [attr.data-which]=npc.name (click)='setSelected($event)'>
+  <div class="potrait" [attr.data-which]=npc.name>
+    <h4 class="name info text-center" [attr.data-which]=npc.name>{{npc.name}}</h4>
+    <img src={{npc.img_src}} alt={{npc.name}} [attr.data-which]=npc.name>
   </div>
 </div>
