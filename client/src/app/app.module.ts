@@ -12,6 +12,7 @@ import { MatchComponent } from './match/match.component';
 import { HeaderComponent } from './header/header.component';
 import { PersonComponent } from './components/person/person.component';
 import { ProfileComponent } from './profile/profile.component';
+import { GuideComponent } from './guide/guide.component';
 
 @NgModule({
   declarations: [
@@ -22,7 +23,8 @@ import { ProfileComponent } from './profile/profile.component';
     MatchComponent,
     HeaderComponent,
     PersonComponent,
-    ProfileComponent
+    ProfileComponent,
+    GuideComponent
   ],
   imports: [
     BrowserModule,

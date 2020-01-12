@@ -1,0 +1,22 @@
+.container{
+  width: 70%;
+  margin: 1em auto;
+
+  section{
+    margin-bottom: 20px;
+  }
+
+  h2.sub-title{
+    margin-bottom: 20px;
+  }
+
+  p.content{
+    text-indent: 10px;
+  }
+
+  .exception{
+    font-size: 12px;
+    background-color: grey;
+    padding: 2px;
+  }
+}
