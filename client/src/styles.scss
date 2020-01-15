@@ -17,6 +17,10 @@ ul{
   text-align: center;
 }
 
+.font{
+  font-family: 'Eczar', serif;
+}
+
 .mobile-hide{
   @media screen and (max-width: 900px) {
     display: none;

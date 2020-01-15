@@ -1,17 +1,40 @@
+.wrapper{
+  min-height: calc(100vh - 56.8px);
+  height: 100%;
+  background: url('https://images.pexels.com/photos/1146717/pexels-photo-1146717.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260');
+  background-attachment: fixed;
+  padding: 2em 0;
+} 
+
 .container{
   width: 70%;
-  margin: 1em auto;
+  margin: 0 auto;
+  background-color: rgba(255, 255, 255, 0.904);
+  padding: 20px 60px;
+  border-radius: 20px;
+  
 
   section{
-    margin-bottom: 20px;
+    padding-bottom: 20px;
   }
 
-  h2.sub-title{
-    margin-bottom: 20px;
+  h2.sub-title, h3.sub-title{
+    padding-bottom: 10px;
+    text-decoration: underline rgba(193, 114, 61, 0.842);
   }
 
   p.content{
-    text-indent: 10px;
+    font-size: 20px;
+    letter-spacing: 1.4px;
+    background-color: #C1713D;
+    color: white;
+    padding: 5px;
+    border-radius: 5px;
+  }
+
+  .sub-wrap{
+    width: 90%;
+    margin: auto;
   }
 
   .exception{
@@ -19,4 +42,6 @@
     background-color: grey;
     padding: 2px;
   }
+
+
 }

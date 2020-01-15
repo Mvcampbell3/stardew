@@ -1,10 +1,11 @@
 header{
-  background-color: deepskyblue;
-  color: white;
+  background-color: white;
+  color: black;
   display: flex;
   justify-content: space-between;
   align-items: center;
   height: 56.8px;
+  border-bottom: 1px black solid;
 
   @media screen and (max-width: 900px) {
     display: block;
@@ -23,11 +24,11 @@ header{
 
     a{
       text-decoration: none;
-      color: white;
+      color: black;
       padding: 0pc 30px;
       &:hover{
-        background-color: #333;
-        color: deepskyblue;
+        background-color: #222;
+        color: rgb(0, 255, 170);
       }
     }
   }
@@ -38,7 +39,7 @@ header{
     li a{
       padding: 10px;
       text-decoration: none;
-      color: white;
+      color: black;
       font-family: 'Eczar', serif;
       margin-left: 5px;
       height: 56.8px;
@@ -46,8 +47,8 @@ header{
       place-items: center center;
 
       &:hover{
-        background-color: #333;
-        color: deepskyblue;
+        background-color: #222;
+        color: rgb(0, 255, 170);
       }
     }
   }
