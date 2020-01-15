@@ -1,3 +1,5 @@
+@import "../../sassVars.scss";
+
 .wrapper{
   min-height: calc(100vh - 56.8px);
   height: 100%;
@@ -9,10 +11,18 @@
 .container{
   width: 70%;
   margin: 0 auto;
-  background-color: rgba(255, 255, 255, 0.904);
+  background-color: rgba(255, 255, 255, 0.767);
   padding: 20px 60px;
   border-radius: 20px;
+
+  @media screen and (max-width: 1000px) {
+    padding: 20px 30px;
+    width: 80%;
+  }
   
+  .title{
+    font-family: $font-title;
+  }
 
   section{
     padding-bottom: 20px;
@@ -26,10 +36,11 @@
   p.content{
     font-size: 20px;
     letter-spacing: 1.4px;
-    background-color: #C1713D;
+    background-color: $background-fall;
     color: white;
     padding: 5px;
     border-radius: 5px;
+    font-family: $font-content;
   }
 
   .sub-wrap{
@@ -43,5 +54,39 @@
     padding: 2px;
   }
 
+  .show-dec{
+    list-style: square;
+    list-style-position: inside;
+  }
+
+  .caption{
+    font-size: 10px;
+    font-family: $font-content;
+    font-weight: 100;
+    text-decoration: none;
+  }
+
+  .flex-list-title{
+    display: flex;
+    align-items: center;
+
+    .list-title{
+      font-family: $font-title;
+      text-decoration: underline $background-fall;
+      padding-right: 4px;
+    }
+  }
+
+  .list{
+    margin: 1em 0;
+
+    ul{
+      background-color: $background-fall;
+      width: fit-content;
+      padding: 20px;
+      color: white;
+      border-radius: 20px;
+    }
+  }
 
 }
