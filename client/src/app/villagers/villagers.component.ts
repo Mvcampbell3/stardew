@@ -9,7 +9,8 @@ import { NPC } from '../models/NPC';
 })
 export class VillagersComponent implements OnInit {
 
-  villagers: NPC[] = villagers;
+  marry_villagers: NPC[] = villagers.filter(villager => villager.marriable === true);
+  non_marry_villagers: NPC[] = villagers.filter(villager => villager.marriable === false)
 
   selectedVillager: NPC = null;
   showProfile: boolean = false;
@@ -21,7 +22,7 @@ export class VillagersComponent implements OnInit {
 
   pickVillager(e) {
     console.log(e)
-    this.selectedVillager = this.villagers.filter(villager => villager.name === e)[0];
+    this.selectedVillager = villagers.filter(villager => villager.name === e)[0];
     this.showProfile = true;
     console.log(this.selectedVillager)
   }

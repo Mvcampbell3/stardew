@@ -9,9 +9,23 @@
   </ng-template>
 
   <ng-template #elseBlock>
-    <div class="npc-holder">
-      <app-person *ngFor='let villager of villagers' [npc]=villager (selected)='pickVillager($event)'></app-person>
+    <div class="villager-group">
+      <h3 class="text-center title">Marriable</h3>
+      <div class="npc-holder">
+        <app-person *ngFor='let villager of marry_villagers' [npc]=villager (selected)='pickVillager($event)'>
+        </app-person>
+      </div>
     </div>
+
+
+    <div class="villager-group">
+      <h3 class="text-center title">Non-Marriable</h3>
+      <div class="npc-holder">
+        <app-person *ngFor='let villager of non_marry_villagers' [npc]=villager (selected)='pickVillager($event)'>
+        </app-person>
+      </div>
+    </div>
+
   </ng-template>
 
 
