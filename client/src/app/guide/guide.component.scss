@@ -8,7 +8,6 @@ section{
   justify-items: center;
   padding: 40px 0;
   line-height: 2;
-  // color: white;
 
   h2, h3{
     font-family: $font-content;
@@ -44,7 +43,7 @@ section{
 
 .section1{
 
-  background: url('../../assets/images/farmday.png');
+  background: url('../../assets/images/NightMarket.png');
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
@@ -74,14 +73,13 @@ section{
 
 .section2{
   background-color: whitesmoke;
-  background: url('../../assets/images/NightMarket.png');
+  background: url('../../assets/images/farmday.png');
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
 }
 
 .list{
-  // background-color: orange;
   margin: .5em auto 0 auto;
   width: fit-content;
   padding: 1em;
