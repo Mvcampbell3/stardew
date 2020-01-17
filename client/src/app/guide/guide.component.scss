@@ -1,100 +1,135 @@
 @import "../../sassVars.scss";
 
-// .wrapper{
-//   min-height: calc(100vh - 56.8px);
-//   height: 100%;
-//   background: url('https://images.pexels.com/photos/1146717/pexels-photo-1146717.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260');
-//   background-attachment: fixed;
-//   padding: 2em 0;
-// } 
-
-// .container{
-//   width: 70%;
-//   margin: 0 auto;
-//   background-color: rgba(255, 255, 255, 0.767);
-//   padding: 20px 60px;
-//   border-radius: 20px;
-
-//   @media screen and (max-width: 1000px) {
-//     padding: 20px 30px;
-//     width: 80%;
-//   }
-  
-//   .title{
-//     font-family: $font-title;
-//   }
-
-//   section{
-//     padding-bottom: 20px;
-//   }
-
-//   h2.sub-title, h3.sub-title{
-//     padding-bottom: 10px;
-//     text-decoration: underline rgba(193, 114, 61, 0.842);
-//   }
-
-//   p.content{
-//     font-size: 20px;
-//     letter-spacing: 1.4px;
-//     background-color: $background-fall;
-//     color: white;
-//     padding: 5px;
-//     border-radius: 5px;
-//     font-family: $font-content;
-//   }
-
-//   .sub-wrap{
-//     width: 90%;
-//     margin: auto;
-//   }
-
-//   .exception{
-//     font-size: 12px;
-//     background-color: grey;
-//     padding: 2px;
-//   }
-
-//   .show-dec{
-//     list-style: square;
-//     list-style-position: inside;
-//   }
-
-//   .caption{
-//     font-size: 10px;
-//     font-family: $font-content;
-//     font-weight: 100;
-//     text-decoration: none;
-//   }
-
-//   .flex-list-title{
-//     display: flex;
-//     align-items: center;
-
-//     .list-title{
-//       font-family: $font-title;
-//       text-decoration: underline $background-fall;
-//       padding-right: 4px;
-//     }
-//   }
-
-//   .list{
-//     margin: 1em 0;
-
-//     ul{
-//       background-color: $background-fall;
-//       width: fit-content;
-//       padding: 20px;
-//       color: white;
-//       border-radius: 20px;
-//     }
-//   }
-
-// }
-
 section{
-  min-height: 60vh;
+  min-height: 80vh;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr;
+  justify-items: center;
+  padding: 40px 0;
+  line-height: 2;
+  // color: white;
 
   h2, h3{
+    font-family: $font-content;
+    font-weight: 300;
+    margin-bottom: 1em;
+  }
+
+  h2{
+    font-size: 30px;
+    text-decoration: underline;
+  }
+
+  .sub-wrap{
+    width: 70%;
+    margin: 1em auto 0 auto;
+  }
+
+  p.content{
+    font-size: 20px;
+    font-family: $font-content;
+    letter-spacing: 1.1px;
+  }
+}
+
+.wrapper{
+  background-color: rgba(255, 255, 255, 0.918);
+  width: 70%;
+  border-radius: 30px;
+  display: grid;
+  place-items: center center;
+  padding-bottom: .5em;
+}
+
+.section1{
+
+  background: url('../../assets/images/farmday.png');
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+
+  h1{
+    font-size: 36px;
     font-family: $font-title;
+  }
+
+  .top-part{
+    width: fit-content;
+    margin: auto;
+    padding: 20px;
+  
+    img{
+      width: fit-content;
+      margin: 0 auto;
+      display: block;
+    }
+  }
+}
+
+.break-bar{
+  height: 5vh;
+  background-color: black;
+}
+
+.section2{
+  background-color: whitesmoke;
+  background: url('../../assets/images/NightMarket.png');
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+}
+
+.list{
+  // background-color: orange;
+  margin: .5em auto 0 auto;
+  width: fit-content;
+  padding: 1em;
+  border-radius: 20px;
+
+  .flex-list-title{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+
+    h4{
+      margin: 0 10px 0 0;
+      font-family: $font-title;
+      font-size: 20px;
+    }
+
+    p.caption{
+      height: 37px;
+      display: grid;
+      place-items: center center;
+    }
+  }
+
+  ul{
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.658);
+    color: white;
+    padding: 10px 0;
+    border-radius: 20px;
+
+    li{
+      width: fit-content;
+      margin: 0 auto;
+      position: relative;
+      font-size: 20px;
+
+      &::before{
+        content: "";
+        width: 5px;
+        height: 5px;
+        background-color: white;
+        display: block;
+        position: absolute;
+        top: calc(50% - 2.5px);
+        left: -10px;
+        transform: rotateZ(45deg)
+      }
+    }
   }
 }
