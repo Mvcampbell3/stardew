@@ -18,17 +18,35 @@ section{
   h2{
     font-size: 30px;
     text-decoration: underline;
+
+    @media screen and (max-width: 750px) {
+      font-size: 22px;
+    }
   }
 
   .sub-wrap{
     width: 70%;
     margin: 1em auto 0 auto;
+
+    @media screen and (max-width: 1000px) {
+      width: 80%;
+    }
+    @media screen and (max-width: 600px) {
+      width: 90%;
+    }
   }
 
   p.content{
     font-size: 20px;
     font-family: $font-content;
     letter-spacing: 1.1px;
+
+    @media screen and (max-width: 750px) {
+      font-size: 16px;
+    }
+    @media screen and (max-width: 500px) {
+      font-size: 13px;
+    }
   }
 }
 
@@ -39,6 +57,17 @@ section{
   display: grid;
   place-items: center center;
   padding-bottom: 2em;
+
+  @media screen and (max-width: 1200px) {
+    width: 80%;
+  }
+
+  @media screen and (max-width:1000px) {
+    width: 90%;
+  }
+  @media screen and (max-width:500px) {
+    width: 96%;
+  }
 }
 
 .section1{
@@ -51,6 +80,10 @@ section{
   h1{
     font-size: 36px;
     font-family: $font-title;
+
+    @media screen and (max-width: 750px) {
+      font-size: 24px;
+    }
   }
 
   .top-part{
