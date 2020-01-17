@@ -1,14 +1,18 @@
 header{
-  background-color: white;
+  background-color: #222;
   color: black;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  height: 56.8px;
   border-bottom: 1px black solid;
+  
 
   @media screen and (max-width: 900px) {
     display: block;
+  }
+
+  .brand{
+    padding-left: 30px;
   }
 
   h1{
@@ -21,34 +25,43 @@ header{
     @media screen and (max-width: 600px){
       font-size: 24px;
     }
-
+    
     a{
+      display: grid;
+      place-items: center center;
       text-decoration: none;
-      color: black;
-      padding: 0pc 30px;
+      color: white;
+      height: 90px;
+      padding: 0px 10px;
       &:hover{
-        background-color: #222;
-        color: rgb(0, 255, 170);
+        background-color: rgb(255, 255, 255);
+        color: rgb(0, 132, 255);
+        text-decoration: underline;
       }
     }
   }
 
   nav ul{
     display: flex;
+    padding-right: 30px;
 
     li a{
       padding: 10px;
       text-decoration: none;
-      color: black;
+      color: white;
       font-family: 'Eczar', serif;
+      font-weight: 500;
+      font-size: 18px;
+      letter-spacing: 1.3px;
       margin-left: 5px;
-      height: 56.8px;
+      height: 89px;
       display: grid;
       place-items: center center;
 
       &:hover{
-        background-color: #222;
-        color: rgb(0, 255, 170);
+        background-color: rgb(255, 255, 255);
+        color: rgb(0, 132, 255);
+        text-decoration: underline;
       }
     }
   }
