@@ -38,7 +38,7 @@ section{
   border-radius: 30px;
   display: grid;
   place-items: center center;
-  padding-bottom: .5em;
+  padding-bottom: 2em;
 }
 
 .section1{
@@ -74,6 +74,13 @@ section{
 .section2{
   background-color: whitesmoke;
   background: url('../../assets/images/farmday.png');
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+}
+
+.section3{
+  background: url('../../assets/images/NightMarket.png');
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
