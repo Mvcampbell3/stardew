@@ -12,6 +12,7 @@ import { HeaderComponent } from './header/header.component';
 import { PersonComponent } from './components/person/person.component';
 import { ProfileComponent } from './profile/profile.component';
 import { GuideComponent } from './guide/guide.component';
+import { GiftsComponent } from './gifts/gifts.component';
 
 @NgModule({
   declarations: [
@@ -22,7 +23,8 @@ import { GuideComponent } from './guide/guide.component';
     HeaderComponent,
     PersonComponent,
     ProfileComponent,
-    GuideComponent
+    GuideComponent,
+    GiftsComponent
   ],
   imports: [
     BrowserModule,
