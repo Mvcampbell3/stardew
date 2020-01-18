@@ -1,44 +1,114 @@
+@import '../../sassVars.scss';
+
 .landing-container{
   min-height: 100vh;
   overflow: hidden;
   position: relative;
+  background-color: skyblue;
+  display: flex;
+  align-items: flex-end;
+}
+
+.animation-area{
+  width: 350px;
+  height: 500px;
+  left: calc(50vw - 175px);
+  position: absolute;
 }
 
 .main-box{
-  width: 600px;
-  position: relative;
+  width: 350px;
+  position: absolute;
+  z-index: 5;
   border: 1px black solid;
   padding: 20px;
-  background-color: rgb(78, 47, 5);
-  left: calc(50vw - 300px);
+  background: url('https://images.pexels.com/photos/172303/pexels-photo-172303.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260');
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  top: 150px;
+  left: calc(50vw - 175px);
+  animation-name: dropDown;
+  animation-duration: 3s;
+  animation-fill-mode: forwards;
+  animation-timing-function: cubic-bezier(0.55, 0.055, 0.675, 0.19);
+  transform: translateY(-369.2px);
+  border-radius: 20px;
 
   h1{
     color: white;
+    font-family: $font-title;
+    font-weight: 800;
+    background-color: rgb(92, 57, 4);
+
+    width: fit-content;
+    margin: 0 auto;
+    padding: 5px;
+    border-radius: 5px;
   }
 
+  .links{
+    display: grid;
+    margin-top: 20px;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
 
-  @media screen and (max-width: 900px) {
-    width: 400px;
-    left: calc(50vw - 200px);
-  }
-
-  @media screen and (max-width: 600px) {
-    width: 350px;
-    left: calc(50vw - 175px);
+    .link{
+      padding: 5px;
+      text-align: center;
+      font-size: 18px;
+      font-family: $font-content;
+      background-color: rgb(92, 57, 4);
+      display: grid;
+      color: white;
+      border-radius: 5px;
+    }
   }
 }
 
-.links{
-  display: grid;
-  margin-top: 20px;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 20px;
+@keyframes dropDown{
+  0% {transform: translateY(-369.2px)}
+  100% {transform: translateY(0px)}
 }
 
-.link{
-  padding: 5px;
-  text-align: center;
-  background-color: green;
-  display: grid;//   place-items: center center;
+.grass{
+  width: 350px;
+  height: auto;
+  left: 0;
+  display: block;
+  position: absolute;
+  bottom: 0;
+  z-index: 3;
+  animation-name: opacUp;
+  animation-duration: 2s;
+  animation-delay: 3s;
+  animation-fill-mode: forwards;
+  opacity: 0;
 }
 
+@keyframes opacUp{
+  0% {opacity: 0}
+  100% {opacity: 1}
+}
+
+.stick{
+  width: 50px;
+  height: 550px;
+  position: absolute;
+  background-color: rgb(92, 57, 4);
+  left: 150px;
+  bottom: 0;
+  z-index: 2;
+  animation-name: sweep;
+  animation-duration: 1s;
+  animation-delay: 2.5s;
+  animation-fill-mode: forwards;
+  transform: translate(200px, 400px) rotateZ(-90deg);
+}
+
+@keyframes sweep{
+  0% {transform: translate(200px, 400px) rotateZ(-90deg)}
+  100% {transform: translate(0px, 0px) rotateZ(0deg)}
+}
+
+// ------------------------------------------------- //

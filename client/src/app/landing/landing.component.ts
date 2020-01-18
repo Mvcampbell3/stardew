@@ -10,6 +10,8 @@ import { NPC } from '../models/NPC';
 })
 export class LandingComponent implements OnInit {
 
+  showAnimation: boolean = true;
+
   npcGroup: NPC[] = [];
 
   constructor(public http: HttpService) { }
