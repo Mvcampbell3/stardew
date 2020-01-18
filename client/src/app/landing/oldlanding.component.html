@@ -1,0 +1,35 @@
+<div *ngIf='showAnimation; then aniBlock else loadedBlock'></div>
+
+<ng-template #aniBlock>
+  <div class="landing-container">
+    <div class="main-box">
+      <h1 class='text-center'>Stardew Valley <br> Relationships</h1>
+      <div class="links">
+        <a routerLink='/villagers' class="link">Villagers</a>
+        <a routerLink='/gifts' class="link">Gifts</a>
+        <a routerLink='/guide' class="link">Guide</a>
+      </div>
+    </div>
+    <div class="animation-area">
+      <div class="stick"></div>
+      <img src="../../assets/images/grass-2.png" alt="" class="grass">
+    </div>
+  </div>
+  
+</ng-template>
+
+
+<ng-template #loadedBlock>
+  <div class="main-box-still">
+    <h1 class='text-center'>Stardew Valley <br> Relationships</h1>
+    <div class="links">
+      <a routerLink='/villagers' class="link">Villagers</a>
+      <a routerLink='/gifts' class="link">Gifts</a>
+      <a routerLink='/guide' class="link">Guide</a>
+    </div>
+  </div>
+  <div class="animation-area-still">
+    <div class="stick-still"></div>
+    <img src="../../assets/images/grass-2.png" alt="" class="grass-still">
+  </div>
+</ng-template>
