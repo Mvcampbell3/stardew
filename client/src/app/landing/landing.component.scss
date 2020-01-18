@@ -1,5 +1,7 @@
 .landing-container{
   min-height: 100vh;
+  overflow: hidden;
+  position: relative;
 }
 
 .main-box{
@@ -8,13 +10,7 @@
   border: 1px black solid;
   padding: 20px;
   background-color: rgb(78, 47, 5);
-  top: -25vh;
   left: calc(50vw - 300px);
-
-  animation-name: dropDown;
-  animation-duration: .5s;
-  animation-fill-mode: forwards;
-  animation-timing-function: linear;
 
   h1{
     color: white;
@@ -43,11 +39,6 @@
   padding: 5px;
   text-align: center;
   background-color: green;
-  display: grid;
-  place-items: center center;
+  display: grid;//   place-items: center center;
 }
 
-@keyframes dropDown{
-  0% { top: -25vh}
-  100% {top: 25vh}
-} 

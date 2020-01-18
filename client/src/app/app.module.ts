@@ -7,7 +7,6 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { LandingComponent } from './landing/landing.component';
 import { VillagersComponent } from './villagers/villagers.component';
-import { CropsComponent } from './crops/crops.component';
 import { MatchComponent } from './match/match.component';
 import { HeaderComponent } from './header/header.component';
 import { PersonComponent } from './components/person/person.component';
@@ -19,7 +18,6 @@ import { GuideComponent } from './guide/guide.component';
     AppComponent,
     LandingComponent,
     VillagersComponent,
-    CropsComponent,
     MatchComponent,
     HeaderComponent,
     PersonComponent,
