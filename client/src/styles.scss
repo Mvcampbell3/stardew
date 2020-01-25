@@ -35,6 +35,11 @@ ul{
   opacity: 0;
 }
 
+.header-blocker{
+  width: 100vw;
+  height: 99px;
+}
+
 @keyframes fadeIn{
   0% { opacity: 0 }
   100% { opacity: 1 }
