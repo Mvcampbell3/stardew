@@ -1,5 +1,10 @@
 @import '../../sassVars.scss';
 
+.container{
+  background-color: #222;
+  min-height: 100vh;
+}
+
 
 .block{
   position: relative;
@@ -7,26 +12,30 @@
 }
 
 .stardew{
-  width: 250px;
+  width: 324px;
 }
 
 .second{
-  width: 214px;
+  width: 260px;
 }
 
 .stardew .letter{
-  font-family: 'Sigmar One', cursive;
-  font-size: 30px;
+  font-family: $font-intro;
+  display: grid;
+  place-items: center center;
+  color: white;
+  font-size: 40px;
   position: absolute;
   transition: all, .8s;
   opacity: 0;
 }
 
 .second .lower{
-  font-family: 'Sigmar One', cursive;
-  font-size: 30px;
+  font-family: $font-intro;
+  font-size: 40px;
   position: absolute;
   transition: all, .8s;
+  color: white;
   opacity: 0;
 }
 
@@ -42,8 +51,8 @@
 .landing-link{
   padding: 20px;
   text-decoration: none;
-  color: white;
-  background-color: #333;
+  color: black;
+  background-color: white;
   border-radius: 20px;
   font-family: Arial, Helvetica, sans-serif;
   letter-spacing: 1.5px;
@@ -52,9 +61,9 @@
   place-items: center center;
 
   &:hover{
-    background-color: rgb(101, 197, 101);
-    color: #333;
+    background-color: rgb(103, 255, 103);
     text-decoration: underline;
+    // color: white;
     transition: all, .3s;
   }
 }

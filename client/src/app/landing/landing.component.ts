@@ -29,7 +29,8 @@ export class LandingComponent implements OnInit {
     console.log(letters);
 
     letters.forEach((letter, i) => {
-      letter.style.left = `${(34 * i)}px`;
+      letter.style.width = '44px'
+      letter.style.left = `${(44 * i)}px`;
       letter.style.top = `${0}px`;
       letter.style.transform = `translateY(${0 + (0 * i)}px)`;
       letter.style.opacity = '0';
@@ -47,7 +48,9 @@ export class LandingComponent implements OnInit {
     const seconds = [].slice.call(document.querySelectorAll('.lower'));
     console.log(seconds);
     seconds.forEach((letter, i) => {
-      letter.style.left = `${(34 * i)}px`;
+      letter.style.width = '44px'
+
+      letter.style.left = `${(44 * i)}px`;
       letter.style.top = `${0}px`;
       letter.style.transform = `translateY(${0 + (0 * i)}px)`;
       letter.style.opacity = '0';
