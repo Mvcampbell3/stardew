@@ -17,6 +17,48 @@ export class LandingComponent implements OnInit {
   constructor(public http: HttpService) { }
 
   ngOnInit() {
+    this.arrangeLetters()
+    setTimeout(() => {
+      this.arrangeBottomLetters();
+
+    }, 100)
   }
+
+  arrangeLetters() {
+    const letters = [].slice.call(document.querySelectorAll('.letter'));
+    console.log(letters);
+
+    letters.forEach((letter, i) => {
+      letter.style.left = `${(34 * i)}px`;
+      letter.style.top = `${0}px`;
+      letter.style.transform = `translateY(${0 + (0 * i)}px)`;
+      letter.style.opacity = '0';
+
+      setTimeout(() => {
+        letter.style.transform = `translateY(${100 + (5 * i)}px)`;
+        letter.style.opacity = '1'
+      }, 100*i)
+    })
+
+    
+  }
+
+  arrangeBottomLetters() {
+    const seconds = [].slice.call(document.querySelectorAll('.lower'));
+    console.log(seconds);
+    seconds.forEach((letter, i) => {
+      letter.style.left = `${(34 * i)}px`;
+      letter.style.top = `${0}px`;
+      letter.style.transform = `translateY(${0 + (0 * i)}px)`;
+      letter.style.opacity = '0';
+
+      setTimeout(() => {
+        letter.style.transform = `translateY(${150 + (5 * i)}px)`;
+        letter.style.opacity = '1'
+      }, 150*i)
+    })
+  }
+
+
 
 }
