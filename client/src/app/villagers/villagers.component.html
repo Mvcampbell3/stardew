@@ -1,7 +1,6 @@
 <app-header></app-header>
 
 <div class="container">
-  <div class="header-blocker"></div>
   <div *ngIf="showProfile; then thenBlock else elseBlock"></div>
 
   <ng-template #thenBlock>
