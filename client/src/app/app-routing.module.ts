@@ -11,7 +11,7 @@ const routes: Routes = [
   { path: '', component: LandingComponent },
   { path: 'villagers', component: VillagersComponent },
   { path: 'gifts', component: GiftsComponent },
-  { path: 'match', component: MatchComponent },
+  { path: 'match/:item', component: MatchComponent },
   { path: 'guide', component: GuideComponent }
 ];
 
