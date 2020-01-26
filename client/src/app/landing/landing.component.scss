@@ -1,10 +1,9 @@
 @import '../../sassVars.scss';
 
-.container{
+.container-landing{
   background-color: #222;
   min-height: 100vh;
 }
-
 
 .block{
   position: relative;
@@ -28,6 +27,7 @@
   position: absolute;
   transition: all, .8s;
   opacity: 0;
+  transition-timing-function: cubic-bezier(0.68, -0.55, 0.265, 1.55);
 }
 
 .second .lower{
@@ -37,15 +37,18 @@
   transition: all, .8s;
   color: white;
   opacity: 0;
+  transition-timing-function: cubic-bezier(0.68, -0.55, 0.265, 1.55);
 }
 
 .link-holder{
+  position: absolute;
+  bottom: 100px;
   display: grid;
   grid-template-columns: 1fr;
   width: 300px;
   gap: 20px;
   margin: 0 auto;
-  padding-top: calc(50vh - 152px)
+  left: calc(50vw - 150px);
 }
 
 .landing-link{
