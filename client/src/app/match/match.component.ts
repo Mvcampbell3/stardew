@@ -1,8 +1,9 @@
 import { Component, OnInit } from '@angular/core';
-import { Router, ActivatedRoute, ParamMap } from '@angular/router';
-import { switchMap } from 'rxjs/operators';
+import { Router, ActivatedRoute } from '@angular/router';
 import { NPC } from '../models/NPC';
 import villagers from '../models/npcSeed';
+import { Item } from '../models/item';
+import items from '../models/itemSeed';
 
 @Component({
   selector: 'app-match',
@@ -20,7 +21,7 @@ export class MatchComponent implements OnInit {
   ) { }
 
   ngOnInit() {
-    console.log('excuse me')
+    console.log(items)
 
     this.getSearch();
 
