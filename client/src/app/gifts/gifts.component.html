@@ -1,1 +1,9 @@
 <app-header></app-header>
+<div class="item-holder">
+  <div class="item" *ngFor='let item of itemList'>
+    <div class="showcase">
+      <h5 class="name info text-center">{{item.name}}</h5>
+      <img src={{item.img_url}} alt={{item.name}}>
+    </div>
+  </div>
+</div>
