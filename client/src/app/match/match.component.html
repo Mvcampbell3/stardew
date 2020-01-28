@@ -1,1 +1,13 @@
 <app-header></app-header>
+
+<div class="villager-holder" *ngIf='villager'>
+  <h1>There is a villager in the link!</h1>
+</div>
+
+<div class="gift-holder" *ngIf='gift'>
+  <h1>There is a gift in the link!</h1>
+</div>
+
+<div class="failed-holder" *ngIf='failed'>
+  <h1>I couldn't find what you are looking for!</h1>
+</div>

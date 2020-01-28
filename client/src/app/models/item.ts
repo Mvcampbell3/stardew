@@ -8,5 +8,9 @@ export class Item {
     public villager_loves: string[],
     public ingredients?: { name: string, amt: number }[],
     public season?: string,
-  ) { }
+    public search_name?: string,
+
+  ) {
+    this.search_name = this.name.split(' ').join('').toLowerCase();
+   }
 }
